@@ -1,0 +1,10 @@
+services:
+  - docker
+install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+env:
+  ci: true
+script:
+  - docker build -t "$DOCKER_USERNAME"/aws-rds-keycloak .
+  - docker images
+  - docker push "$DOCKER_USERNAME"/aws-rds-keycloak
