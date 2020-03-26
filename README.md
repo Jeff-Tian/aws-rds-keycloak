@@ -2,6 +2,12 @@
 
 > A docker container image that made some tweaks to original `jboss/keycloak` to let it work with `aws rds`.
 
+## Usage
+
+```bash
+docker pull jefftian/aws-rds-keycloak
+```
+
 ## Why
 
 Currently the latest `jboss/keycloak` can't connect to `aws rds` database due to a mismatched `java security`. If you are facing the same issue you can use this image too.
