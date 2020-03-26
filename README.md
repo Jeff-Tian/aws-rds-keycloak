@@ -2,6 +2,8 @@
 
 > A docker container image that made some tweaks to original `jboss/keycloak` to let it work with `aws rds`.
 
+[![Build Status](https://travis-ci.com/Jeff-Tian/aws-rds-keycloak.svg?branch=master)](https://travis-ci.com/Jeff-Tian/aws-rds-keycloak)
+
 ## Usage
 
 ```bash
